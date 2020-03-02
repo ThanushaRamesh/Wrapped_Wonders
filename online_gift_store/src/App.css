@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  padding: 0;
+}
+
+.footer-1 {
+  padding: 20px 0px 5px 0px;
+  background: white;
+}
+
+.footer-2 {
+    background: #545871;
+    color: white;
+    padding: 30px 20px 20px 10px;
+}
+
+  .links, .logo, .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+  padding-top: 25px;
+}
+
+.links > a, .social > h2 {
+    padding: 0 30px;
+    color: black;
+}
+
+.MuiStepper-vertical {
+  background: transparent !important;
+}
