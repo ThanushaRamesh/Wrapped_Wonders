@@ -16,6 +16,7 @@ import {
 
 const FeaturedCategories = () => {
   return (
+    <div>
     <MDBContainer size='lg'>
       <p className='heading'> Categories </p>
       <MDBRow className='row-margin'>
@@ -65,6 +66,8 @@ const FeaturedCategories = () => {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+    <a href="Categories">See all Categories</a>
+    </div>
   );
 };
 export default FeaturedCategories;

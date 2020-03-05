@@ -493,7 +493,7 @@ Cart
   margin-bottom: 0;
 }
 .cart-btn {
-  background: transparent;
+  background: #64006c;
   border: none;
   cursor: pointer;
 }

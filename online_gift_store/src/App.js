@@ -8,6 +8,7 @@ import Categories from "./pages/Categories";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Error from "./pages/Error";
+import GiftDetails from "./pages/GiftDetails";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -39,6 +40,10 @@ export default function App() {
 
         <Route path='/login'>
           <Login />
+        </Route>
+
+        <Route path='/giftdetails'>
+          <GiftDetails />
         </Route>
 
         <Route path='*'>
