@@ -14,36 +14,35 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 
 //components
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <Router>
-      <Header />
+      <Navbar />
       <Switch>
         <Route exact path='/'>
-          {" "}
-          <Home />{" "}
+          <Home />
         </Route>
+
         <Route path='/about'>
-          {" "}
-          <About />{" "}
+          <About />
+
         </Route>
         <Route path='/categories'>
-          {" "}
-          <Categories />{" "}
+          <Categories />
+
         </Route>
         <Route path='/cart'>
-          {" "}
-          <Cart />{" "}
+          <Cart />
         </Route>
+
         <Route path='/login'>
-          {" "}
-          <Login />{" "}
+          <Login />
         </Route>
+
         <Route path='*'>
-          {" "}
-          <Error />{" "}
+          <Error />
         </Route>
       </Switch>
     </Router>

@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from '../components/Hero'
 import {Link} from 'react-router-dom'
-import About from "../components/About";
-import FeaturedCategories from "../components/Categories/FeaturedCategories";
-import FeaturedProduct from "../components/Products/FeaturedProduct";
+import Hero from '../components/Hero'
+import About from "../components/About"
+import FeaturedCategories from "../components/FeaturedCategories"
+import FeaturedProducts from "../components/FeaturedProducts"
 import Footer from "../components/Footer"
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
     <Hero />
     <About />
     <FeaturedCategories />
-    <FeaturedProduct />
+    <FeaturedProducts />
     <Footer />
     </>
   );
