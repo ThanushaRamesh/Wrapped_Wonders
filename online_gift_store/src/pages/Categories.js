@@ -25,7 +25,7 @@ const Categories = () => {
               className='img-fluid'
               overlay='white-light'
               hover
-              src={require("../assets/Birthday.jpg")}
+              src={require("../assets/Categories/Birthday.jpg")}
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
@@ -40,7 +40,7 @@ const Categories = () => {
               className='img-fluid'
               overlay='white-light'
               hover
-              src={require("../assets/Anniversary.jpg")}
+              src={require("../assets/Categories/Anniversary.jpg")}
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
@@ -55,7 +55,7 @@ const Categories = () => {
               className='img-fluid'
               overlay='white-light'
               hover
-              src={require("../assets/House.jpeg")}
+              src={require("../assets/Categories/House.jpeg")}
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
@@ -70,7 +70,7 @@ const Categories = () => {
               className='img-fluid'
               overlay='white-light'
               hover
-              src={require("../assets/Men.jpg")}
+              src={require("../assets/Categories/Men.jpg")}
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
@@ -85,7 +85,7 @@ const Categories = () => {
               className='img-fluid'
               overlay='white-light'
               hover
-              src={require("../assets/Women.jpg")}
+              src={require("../assets/Categories/Women.jpg")}
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
@@ -100,7 +100,7 @@ const Categories = () => {
               className='img-fluid'
               overlay='white-light'
               hover
-              src={require("../assets/Kids.jpg")}
+              src={require("../assets/Categories/Kids.jpg")}
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>

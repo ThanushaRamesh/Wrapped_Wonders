@@ -1,0 +1,32 @@
+.pad {
+  padding-top: 15px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row-margin {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.heading {
+  text-align: center;
+  color: #64006c;
+  font-family: Helvetica Neue;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.title-css {
+  background-color: #cbcbcb;
+  color: #4a4a4a;
+  font-family: Helvetica Neue;
+  font-size: 30;
+  font-weight: bold;
+}
+
+.card-ht {
+  max-width: 100%;
+  max-height: 100%;
+}
