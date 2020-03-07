@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./GiftDetails.css";
+import Popup from "reactjs-popup";
 
 export default function GiftDetails() {
   const history = useHistory();
@@ -33,13 +34,19 @@ export default function GiftDetails() {
           special, you need to put in that extra effort to ensure a "wow" moment
           for the receiver when the wrapping paper comes off.
         </p>
-        <button
+        {/* <button
           className='btn btn-primary btn-block'
           onClick={() => {
             history.push("/cart");
           }}>
           Add to Cart
-        </button>
+        </button> */}
+        <Popup modal trigger={<button className="btn-primary btn-contact"> Add to cart</button>}>
+        msg={"Hello!! Please tell us something about yourself!!"}/>}
+        </Popup>
+        {/* <Popup trigger={<button> Trigger</button>} position="right center">
+    <div>Popup content here !!</div>
+  </Popup> */}
       </article>
     </section>
   );

@@ -77,11 +77,13 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #f8f2e9 !important;
+}
 
 body {
   font-family: var(--primaryFont);
   color: var(--mainBlack);
-  background: var(--mainBackground);
   line-height: 1.4;
   font-size: 1rem;
   font-weight: 300;
@@ -839,3 +841,8 @@ Filters Section
   font-size: 1.1rem;
   padding: 0 2rem;
 }
+
+/* Navbar */
+.navbar {
+  background-color: #64006c !important;
+ }

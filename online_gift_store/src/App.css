@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -69,4 +69,23 @@
 
 .MuiStepper-vertical {
   background: transparent !important;
+} */
+
+.navbar {
+  background-color: pink !important;
+ }
+
+.white-text{
+  color: #f8f2e9 !important;
 }
+
+.active{
+  color: black;
+}
+
+
+a.nav-link.Ripple-parent.active {
+  color: black;
+}
+
+

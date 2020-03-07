@@ -5,6 +5,7 @@ import { FaTwitter} from "react-icons/fa";
 import { FaHeart} from "react-icons/fa"
 import { FaCopyright} from "react-icons/fa"
 
+
 export default function Footer({ footer,children,contact }) {
     return (
     <div className="col-md-12 footer">
