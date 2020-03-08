@@ -1,23 +1,32 @@
 import React, { Component } from "react";
 import {
 MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBBtn
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import { FaShoppingCart} from "react-icons/fa"
+import Signup from "../components/Signup"
+
+
 
 
 class Navbar extends Component {
-state = {
-  isOpen: false
-};
 
-toggleCollapse = () => {
-  this.setState({ isOpen: !this.state.isOpen });
+    state = {
+        modalOpen: false
+     }
+   
+     handleModalOpen = () => {
+        this.setState((prevState) => {
+           return{
+              modalOpen: !prevState.modalOpen
+           }
+        })
 }
 
 render() {
   return (
+      <div>
       <MDBNavbar dark expand="md">
         <MDBNavbarBrand>
           <strong className="white-text"></strong>
@@ -37,7 +46,11 @@ render() {
               <MDBNavLink to="/categories" activeClassName="active">Categories</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/login" activeClassName="active">Signup</MDBNavLink>
+              {/* <MDBNavLink to="/" activeClassName="active">       */}
+              <a onClick={this.handleModalOpen} className="nav-link">
+                            Signup
+                        </a>              
+                        {/* </MDBNavLink> */}
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="/cart" activeClassName="active">
@@ -47,6 +60,11 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
+      <Signup
+           modalOpen={this.state.modalOpen}
+           handleModalOpen={this.handleModalOpen}
+        />
+        </div>
     );
   }
 }
