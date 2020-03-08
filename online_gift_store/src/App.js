@@ -7,11 +7,10 @@ import About from "./pages/About";
 import Categories from "./pages/Categories";
 import Cart from "./pages/Cart";
 import Login from "./components/Login";
-import Signup from "./components/Signup"
+import Signup from "./components/Signup";
 import Error from "./pages/Error";
 import GiftDetails from "./pages/GiftDetails";
-
-
+import Products from "./pages/Products";
 
 //components
 import Navbar from "./components/Navbar";
@@ -27,11 +26,9 @@ export default function App() {
 
         <Route path='/about'>
           <About />
-
         </Route>
         <Route path='/categories'>
           <Categories />
-
         </Route>
         <Route path='/cart'>
           <Cart />
@@ -47,6 +44,10 @@ export default function App() {
 
         <Route path='/giftdetails'>
           <GiftDetails />
+        </Route>
+
+        <Route path='/products'>
+          <Products />
         </Route>
 
         <Route path='*'>

@@ -1,5 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Categories.css";
+
 import {
   MDBBtn,
   MDBCard,
@@ -29,7 +32,12 @@ const Categories = () => {
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
-              <p>Birthday</p>
+              <p>
+                <Link to='/products' className='Link-clr'>
+                  Birthday
+                </Link>
+              </p>
+              {/* <button onClick={this.onSubmit}>Birthday</button> */}
             </div>
           </MDBCard>
         </MDBCol>
@@ -44,7 +52,11 @@ const Categories = () => {
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
-              <p>Anniversary</p>
+              <p>
+                <Link to='/about' className='Link-clr'>
+                  Anniversary
+                </Link>
+              </p>
             </div>
           </MDBCard>
         </MDBCol>
@@ -59,7 +71,11 @@ const Categories = () => {
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
-              <p>House Warming Ceremony</p>
+              <p>
+                <Link to='/about' className='Link-clr'>
+                  House Warming Ceremony
+                </Link>
+              </p>
             </div>
           </MDBCard>
         </MDBCol>
@@ -74,7 +90,11 @@ const Categories = () => {
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
-              <p>Gifts for Men</p>
+              <p>
+                <Link to='/about' className='Link-clr'>
+                  Gifts for Men
+                </Link>
+              </p>
             </div>
           </MDBCard>
         </MDBCol>
@@ -89,7 +109,11 @@ const Categories = () => {
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
-              <p>Gifts for Women</p>
+              <p>
+                <Link to='/about' className='Link-clr'>
+                  Gifts for Women
+                </Link>
+              </p>
             </div>
           </MDBCard>
         </MDBCol>
@@ -104,7 +128,11 @@ const Categories = () => {
             />
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
-              <p>Gifts for Kids</p>
+              <p>
+                <Link to='/about' className='Link-clr'>
+                  Gifts for Kids
+                </Link>
+              </p>
             </div>
           </MDBCard>
         </MDBCol>
