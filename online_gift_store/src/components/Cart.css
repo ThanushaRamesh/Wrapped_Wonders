@@ -1,0 +1,45 @@
+.center {
+  justify-content: center !important;
+  color: #64006c !important;
+  font-family: fantasy !important;
+  font-size: xx-large !important;
+  border-bottom: 0px !important;
+}
+
+.center-footer {
+  justify-content: center !important;
+  color: white !important;
+  border-top: 0px !important;
+}
+
+.Check-btn {
+  color: #fff !important;
+  background-color: #64006c !important;
+  border: 0 !important;
+  border-radius: 0.125rem !important;
+  font-size: 0.81rem !important;
+}
+
+.body {
+  background: #f3d290 !important;
+  background-color: #f8f3e9 !important;
+}
+
+.remove-btn {
+  background: #f3d290 !important;
+  background-color: #f8f3e9 !important;
+  text-decoration: underline;
+  color: black;
+}
+
+.title-clr {
+  color: #64006c !important;
+  font-weight: 300 !important;
+  font-size: 1.1rem;
+}
+
+.price-clr {
+  color: black !important;
+  font-weight: bold !important;
+  font-size: 0.6rem;
+}

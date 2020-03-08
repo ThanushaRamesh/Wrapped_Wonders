@@ -1,70 +1,104 @@
 import React, { Component } from "react";
 import {
-MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBBtn
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBFormInline,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+  MDBBtn
 } from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
-import { FaShoppingCart} from "react-icons/fa"
-import Signup from "../components/Signup"
-
-
-
+import { BrowserRouter as Router } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
+import Signup from "../components/Signup";
+import Cart from "../components/Cart";
 
 class Navbar extends Component {
+  state = {
+    modalOpen: false,
+    modalOpenCart: false
+  };
 
-    state = {
-        modalOpen: false
-     }
-   
-     handleModalOpen = () => {
-        this.setState((prevState) => {
-           return{
-              modalOpen: !prevState.modalOpen
-           }
-        })
-}
+  handleModalOpen = () => {
+    this.setState(prevState => {
+      return {
+        modalOpen: !prevState.modalOpen
+      };
+    });
+  };
+  handleModalOpenCart = () => {
+    this.setState(prevState => {
+      return {
+        modalOpenCart: !prevState.modalOpenCart
+      };
+    });
+  };
 
-render() {
-  return (
+  render() {
+    return (
       <div>
-      <MDBNavbar dark expand="md">
-        <MDBNavbarBrand>
-          <strong className="white-text"></strong>
-        </MDBNavbarBrand>
-        {/* <MDBNavbarToggler onClick={this.toggleCollapse} /> */}
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <MDBNavbarNav left>
-          {/* <MDBNavLink to="/"><img src={logo}/></MDBNavLink> */}
-          <MDBNavLink to="/">Wrapped Wonders</MDBNavLink>
+        <MDBNavbar dark expand='md'>
+          <MDBNavbarBrand>
+            <strong className='white-text'></strong>
+          </MDBNavbarBrand>
+          {/* <MDBNavbarToggler onClick={this.toggleCollapse} /> */}
+          <MDBCollapse id='navbarCollapse3' isOpen={this.state.isOpen} navbar>
+            <MDBNavbarNav left>
+              {/* <MDBNavLink to="/"><img src={logo}/></MDBNavLink> */}
+              <MDBNavLink to='/'>Wrapped Wonders</MDBNavLink>
+            </MDBNavbarNav>
+            <MDBNavbarNav right>
+              <MDBNavItem>
+                <MDBNavLink to='/about' activeClassName='active'>
+                  About
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to='/categories' activeClassName='active'>
+                  Categories
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                {/* <MDBNavLink to="/" activeClassName="active">       */}
+                <a onClick={this.handleModalOpen} className='nav-link'>
+                  Signup
+                </a>
+                {/* </MDBNavLink> */}
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to='/cart' activeClassName='active'>
+                  <h2>
+                    {" "}
+                    <FaShoppingCart />{" "}
+                  </h2>
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                {/* <MDBNavLink to="/" activeClassName="active">       */}
+                <a onClick={this.handleModalOpenCart} className='nav-link'>
+                  Cart
+                </a>
+                {/* </MDBNavLink> */}
+              </MDBNavItem>
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBNavbar>
 
-          </MDBNavbarNav>
-          <MDBNavbarNav right>
-          <MDBNavItem >
-              <MDBNavLink to="/about" activeClassName="active">About</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="/categories" activeClassName="active">Categories</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              {/* <MDBNavLink to="/" activeClassName="active">       */}
-              <a onClick={this.handleModalOpen} className="nav-link">
-                            Signup
-                        </a>              
-                        {/* </MDBNavLink> */}
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="/cart" activeClassName="active">
-              <h2> <FaShoppingCart /> </h2>
-              </MDBNavLink>
-            </MDBNavItem>
-          </MDBNavbarNav>
-        </MDBCollapse>
-      </MDBNavbar>
-      <Signup
-           modalOpen={this.state.modalOpen}
-           handleModalOpen={this.handleModalOpen}
+        <Signup
+          modalOpen={this.state.modalOpen}
+          handleModalOpen={this.handleModalOpen}
         />
-        </div>
+        <Cart
+          modalOpen={this.state.modalOpenCart}
+          handleModalOpen={this.handleModalOpenCart}
+        />
+      </div>
     );
   }
 }
