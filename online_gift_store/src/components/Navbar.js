@@ -43,7 +43,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <MDBNavbar dark expand='md'>
+        <MDBNavbar dark expand='md' fixed="top">
           <MDBNavbarBrand>
             <strong className='white-text'></strong>
           </MDBNavbarBrand>
@@ -53,8 +53,8 @@ class Navbar extends Component {
               {/* <MDBNavLink to="/"><img src={logo}/></MDBNavLink> */}
               <MDBNavLink to='/'>Wrapped Wonders</MDBNavLink>
             </MDBNavbarNav>
-            <MDBNavbarNav right>
-              <MDBNavItem>
+            <MDBNavbarNav right >
+              <MDBNavItem >
                 <MDBNavLink to='/about' activeClassName='active'>
                   About
                 </MDBNavLink>
@@ -72,18 +72,10 @@ class Navbar extends Component {
                 {/* </MDBNavLink> */}
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to='/cart' activeClassName='active'>
-                  <h2>
-                    {" "}
-                    <FaShoppingCart />{" "}
-                  </h2>
-                </MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                {/* <MDBNavLink to="/" activeClassName="active">       */}
-                <a onClick={this.handleModalOpenCart} className='nav-link'>
-                  Cart
-                </a>
+                {/* <MDBNavLink to='/cart' activeClassName='active'> */}
+                  <h4 onClick={this.handleModalOpenCart} className='nav-link'>
+                    <FaShoppingCart />
+                  </h4>
                 {/* </MDBNavLink> */}
               </MDBNavItem>
             </MDBNavbarNav>

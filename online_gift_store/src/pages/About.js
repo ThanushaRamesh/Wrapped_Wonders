@@ -72,7 +72,7 @@ import img3 from "../assets/Carousel3.jpg";
 
 const CarouselPage = () => {
   return (
-    <MDBContainer>
+    <MDBContainer className="aboutus-container">
     <p className='heading'> About Us </p>
 
       <MDBCarousel
@@ -84,21 +84,23 @@ const CarouselPage = () => {
       >
         <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
-          <MDBCol md='8'>
+          <MDBCol >
                  <MDBBox>
-                   <img src={img1} alt='tst' />
+                   <img 
+                   className="d-block w-100"
+                   src={img1} alt='tst' />
                  </MDBBox>
                </MDBCol>
      </MDBCarouselItem>
           <MDBCarouselItem itemId="2">
-          <MDBCol md='8'>
+          <MDBCol>
                  <MDBBox>
                    <img src={img2} alt='tst' />
                  </MDBBox>
                </MDBCol>
          </MDBCarouselItem>
           <MDBCarouselItem itemId="3">
-          <MDBCol md='8'>
+          <MDBCol >
                  <MDBBox>
                    <img src={img3} alt='tst' />
                  </MDBBox>

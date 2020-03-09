@@ -12,15 +12,21 @@ import {
   MDBIcon,
   MDBContainer
 } from "mdbreact";
+import { Link } from "react-router-dom";
+import { MDBAnimation } from "mdbreact";
+
+
 
 const FeaturedCategories = () => {
   return (
     <div>
+            <MDBAnimation reveal type='fadeIn'>
+
       <MDBContainer size='lg'>
         <p className='heading'> Categories </p>
         <MDBRow className='row-margin'>
           <MDBCol md='4' className='pad'>
-            <MDBCard cascade className='card-ht'>
+            <MDBCard className='card-ht'>
               <MDBCardImage
                 cascade
                 className='img-fluid'
@@ -29,13 +35,17 @@ const FeaturedCategories = () => {
                 src={require("../assets/Categories/Birthday.jpg")}
               />
               <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
-                <p>Birthday</p>
+              <p>
+                <Link to='/products' className='Link-clr'>
+                  Birthday
+                </Link>
+              </p>
               </div>
             </MDBCard>
           </MDBCol>
 
           <MDBCol md='4' className='pad'>
-            <MDBCard cascade className='card-ht'>
+            <MDBCard className='card-ht'>
               <MDBCardImage
                 cascade
                 className='img-fluid'
@@ -50,7 +60,7 @@ const FeaturedCategories = () => {
           </MDBCol>
 
           <MDBCol md='4' className='pad'>
-            <MDBCard cascade className='card-ht'>
+            <MDBCard className='card-ht'>
               <MDBCardImage
                 cascade
                 className='img-fluid'
@@ -65,7 +75,9 @@ const FeaturedCategories = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <a href='Categories'>See all Categories</a>
+      <a href='Categories' className="category-link">See all Categories</a>
+      </MDBAnimation>
+
     </div>
   );
 };

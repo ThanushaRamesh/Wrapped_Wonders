@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"; //rea
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Categories from "./pages/Categories";
-import Cart from "./pages/Cart";
+import Cart from "./components/Cart"
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Error from "./pages/Error";

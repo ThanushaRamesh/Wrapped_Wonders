@@ -220,13 +220,14 @@ Hero
 ======
 */
 .hero {
-  min-height: calc(65vh);
+  min-height: calc(90vh);
   background: 
     url("./assets/hero.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--primaryDarkColor);
+  margin-top: 4%;
 }
 .header-title{
   font-weight: bold;}
@@ -328,7 +329,7 @@ Error
   text-align: center;
   text-transform: capitalize;
 }
-/* 
+/* /* 
 ====== 
 Product List
 ======
@@ -450,7 +451,7 @@ Single Product
     grid-template-columns: 2fr 3fr;
     column-gap: 3rem;
   }
-}
+} */
 /* 
 ====== 
 Cart
@@ -846,3 +847,48 @@ Filters Section
 .navbar {
   background-color: #64006c !important;
  }
+
+ .nav-item {
+  padding: 10px 11px 9px 5px;
+  margin-bottom: -25px;
+ }
+
+ .nav-item h4 {
+  display: inline-block;
+  vertical-align: 20px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 15vw !important;
+  object-fit: cover;
+}
+
+.category-link{
+  display:block;
+  float: right;
+  margin-right: 10%;
+}
+
+.aboutus-container{
+  margin-top: 6%;
+}
+
+.carousel-inner {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* .about-component{
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 0rem;
+  margin-bottom: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+
+} */
