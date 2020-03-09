@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Products.css";
 import PRODUCT_DATA from "./product.data";
+import Categories from "./Categories";
 
 import {
   MDBBtn,
@@ -26,8 +27,8 @@ class Products extends React.Component {
             <div>
               <p className='heading'> {id.title} </p>
               <MDBRow className='row-margin'>
-                <MDBCol md='4' className='pad'>
-                  {id.items.map((c, i) => (
+                {id.items.map((c, i) => (
+                  <MDBCol md='4' className='pad'>
                     <MDBCard cascade className='card-ht'>
                       <MDBCardImage
                         cascade
@@ -44,8 +45,8 @@ class Products extends React.Component {
                         </p>
                       </div>
                     </MDBCard>
-                  ))}
-                </MDBCol>
+                  </MDBCol>
+                ))}
               </MDBRow>
             </div>
           );

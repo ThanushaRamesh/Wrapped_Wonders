@@ -176,8 +176,8 @@ const PRODUCT_DATA = [
   },
   {
     id: 4,
-    title: "Womens",
-    routeName: "womens",
+    title: "Women",
+    routeName: "women",
     items: [
       {
         id: 23,

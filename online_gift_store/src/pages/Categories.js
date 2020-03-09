@@ -53,7 +53,7 @@ const Categories = () => {
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
               <p>
-                <Link to='/about' className='Link-clr'>
+                <Link to='/products' className='Link-clr'>
                   Anniversary
                 </Link>
               </p>
@@ -72,7 +72,7 @@ const Categories = () => {
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
               <p>
-                <Link to='/about' className='Link-clr'>
+                <Link to='/products' className='Link-clr'>
                   House Warming Ceremony
                 </Link>
               </p>
@@ -91,7 +91,7 @@ const Categories = () => {
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
               <p>
-                <Link to='/about' className='Link-clr'>
+                <Link to='/products' className='Link-clr'>
                   Gifts for Men
                 </Link>
               </p>
@@ -110,7 +110,7 @@ const Categories = () => {
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
               <p>
-                <Link to='/about' className='Link-clr'>
+                <Link to='/products' className='Link-clr'>
                   Gifts for Women
                 </Link>
               </p>
@@ -129,7 +129,7 @@ const Categories = () => {
 
             <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
               <p>
-                <Link to='/about' className='Link-clr'>
+                <Link to='/products' className='Link-clr'>
                   Gifts for Kids
                 </Link>
               </p>
