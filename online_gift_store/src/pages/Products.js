@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Products.css";
+import PRODUCT_DATA from "./product.data";
 
 import {
   MDBBtn,
@@ -16,34 +17,42 @@ import {
   MDBContainer
 } from "mdbreact";
 
-const Products = () => {
-  return (
-    <MDBContainer size='lg'>
-      <p className='heading'> Products </p>
-      <MDBRow className='row-margin'>
-        <MDBCol md='4' className='pad'>
-          <MDBCard cascade className='card-ht'>
-            <MDBCardImage
-              cascade
-              className='img-fluid'
-              overlay='white-light'
-              hover
-              src={require("../assets/Categories/Birthday.jpg")}
-            />
-
-            <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
-              <p>
-                <Link to='/giftdetails' className='Link-clr'>
-                  Title
-                </Link>
-              </p>
-              {/* <button onClick={this.onSubmit}>Birthday</button> */}
+class Products extends React.Component {
+  render() {
+    return (
+      <MDBContainer size='lg'>
+        {PRODUCT_DATA.map((id, index) => {
+          return (
+            <div>
+              <p className='heading'> {id.title} </p>
+              <MDBRow className='row-margin'>
+                <MDBCol md='4' className='pad'>
+                  {id.items.map((c, i) => (
+                    <MDBCard cascade className='card-ht'>
+                      <MDBCardImage
+                        cascade
+                        className='img-fluid'
+                        overlay='white-light'
+                        hover
+                        src={c.imageUrl}
+                      />
+                      <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
+                        <p>
+                          <Link to='/giftdetails' className='Link-clr'>
+                            {c.name}
+                          </Link>
+                        </p>
+                      </div>
+                    </MDBCard>
+                  ))}
+                </MDBCol>
+              </MDBRow>
             </div>
-          </MDBCard>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
-  );
-};
+          );
+        })}
+      </MDBContainer>
+    );
+  }
+}
 
 export default Products;
