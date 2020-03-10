@@ -32,12 +32,13 @@ class Products extends React.Component {
       <MDBContainer size='lg'>
         {products.map((i, index) => {
           return (
-            <div>
+            <div key={index}>
               <p className='heading'> {i.title} </p>
               <MDBRow className='row-margin'>
                 {i.items.map((c, i) => (
-                  <MDBCol md='4' className='pad'>
-                    <MDBCard cascade className='card-ht'>
+                  <MDBCol key={i} md='4' className='pad'>
+                  <Link to='/giftdetails' className='Link-clr'>
+                    <MDBCard  className='card-ht'>
                       <MDBCardImage
                         cascade
                         className='img-fluid'
@@ -45,6 +46,7 @@ class Products extends React.Component {
                         hover
                         src={c.imageUrl}
                       />
+                      {/* {c.imageUrl} */}
                       <div className='rounded-bottom lighten-3 text-center pt-3 title-css'>
                         <p>
                           <Link to='/giftdetails' className='Link-clr'>
@@ -53,6 +55,7 @@ class Products extends React.Component {
                         </p>
                       </div>
                     </MDBCard>
+                    </Link>
                   </MDBCol>
                 ))}
               </MDBRow>

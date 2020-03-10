@@ -18,6 +18,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import Signup from "../components/Signup";
 import Cart from "../components/Cart";
+import logo from "../assets/wrapped2.png";
 
 class Navbar extends Component {
   state = {
@@ -44,14 +45,13 @@ class Navbar extends Component {
     return (
       <div>
         <MDBNavbar dark expand='md' fixed="top">
-          <MDBNavbarBrand>
-            <strong className='white-text'></strong>
-          </MDBNavbarBrand>
+          
           {/* <MDBNavbarToggler onClick={this.toggleCollapse} /> */}
           <MDBCollapse id='navbarCollapse3' isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
-              {/* <MDBNavLink to="/"><img src={logo}/></MDBNavLink> */}
-              <MDBNavLink to='/'>Wrapped Wonders</MDBNavLink>
+              <MDBNavLink to='/'>
+              <img src={logo} className="logo" alt='tst' />
+              </MDBNavLink>
             </MDBNavbarNav>
             <MDBNavbarNav right >
               <MDBNavItem >

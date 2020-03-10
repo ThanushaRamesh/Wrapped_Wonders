@@ -23,7 +23,7 @@ const FeaturedCategories = () => {
             <MDBAnimation reveal type='fadeIn'>
 
       <MDBContainer size='lg'>
-        <p className='heading'> Categories </p>
+        <p className='home-title'> Categories </p>
         <MDBRow className='row-margin'>
           <MDBCol md='4' className='pad'>
             <MDBCard className='card-ht'>
@@ -75,7 +75,7 @@ const FeaturedCategories = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <a href='Categories' className="category-link">See all Categories</a>
+      <a href='/categories' className="category-link">See all Categories</a>
       </MDBAnimation>
 
     </div>

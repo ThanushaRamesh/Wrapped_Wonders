@@ -31,6 +31,9 @@ const Cart = props => {
         color='#64006c'>
         <MDBCardBody className='body'>
           <MDBModalHeader className='center'>Your Cart</MDBModalHeader>
+          <Modal.Header closeButton>
+
+                </Modal.Header>
           <MDBModalBody>
             <article className='cart-item'>
               <img
