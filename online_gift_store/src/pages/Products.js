@@ -18,16 +18,24 @@ import {
   MDBContainer
 } from "mdbreact";
 
+const queryString = require("query-string");
 class Products extends React.Component {
   render() {
+    console.log(this.props.catagory);
+    //var parsed = queryString.parse(props.location.search);
+    //console.log(parsed.cate);
+    //console.log(this.props.match.params.id);
+    const idi = this.props.catagory;
+
+    var products = PRODUCT_DATA.filter(x => x.id == idi);
     return (
       <MDBContainer size='lg'>
-        {PRODUCT_DATA.map((id, index) => {
+        {products.map((i, index) => {
           return (
             <div>
-              <p className='heading'> {id.title} </p>
+              <p className='heading'> {i.title} </p>
               <MDBRow className='row-margin'>
-                {id.items.map((c, i) => (
+                {i.items.map((c, i) => (
                   <MDBCol md='4' className='pad'>
                     <MDBCard cascade className='card-ht'>
                       <MDBCardImage

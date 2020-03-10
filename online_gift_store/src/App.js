@@ -46,8 +46,24 @@ export default function App() {
           <GiftDetails />
         </Route>
 
-        <Route path='/products'>
-          <Products />
+        <Route path='/products/birthday' component={Products}>
+          <Products catagory={1} />
+        </Route>
+        <Route path='/products/anniversary' component={Products}>
+          <Products catagory={2} />
+        </Route>
+        <Route path='/products/house' component={Products}>
+          <Products catagory={3} />
+        </Route>
+        <Route path='/products/women' component={Products}>
+          <Products catagory={4} />
+        </Route>
+        <Route path='/products/men' component={Products}>
+          <Products catagory={5} />
+        </Route>
+
+        <Route path='/products/kids' component={Products}>
+          <Products catagory={6} />
         </Route>
 
         <Route path='*'>

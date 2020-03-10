@@ -2,6 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./GiftDetails.css";
 import Popup from "reactjs-popup";
+import Products from './Products'
 
 export default function GiftDetails() {
   const history = useHistory();
