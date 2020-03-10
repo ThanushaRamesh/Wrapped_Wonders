@@ -12,7 +12,7 @@ const Footer = () => {
             <h6 className="text-uppercase mb-4 font-weight-bold">
               Wrapped Wonders
             </h6>
-            <div><img src={img1} alt='tst' /></div>
+            {/* <div><img src={img1} alt='tst' /></div> */}
             {/* <p>
               Here you can use rows and columns here to organize your footer
               content. Lorem ipsum dolor sit amet, consectetur adipisicing
