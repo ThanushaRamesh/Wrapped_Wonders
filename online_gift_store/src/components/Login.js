@@ -16,9 +16,9 @@ const Login = () => {
     
     
   return (
-    <MDBContainer>
+    <MDBContainer className="login-container">
       <MDBRow>
-        <MDBCol md="6">
+        <MDBCol className="login-card" md="6">
           <MDBCard>
             <MDBCardBody>
               <MDBCardHeader className="form-header deep-blue-gradient rounded">

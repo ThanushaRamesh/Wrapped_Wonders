@@ -22,7 +22,7 @@ const FeaturedCategories = () => {
     <div>
             <MDBAnimation reveal type='fadeIn'>
 
-      <MDBContainer size='lg'>
+      <MDBContainer className="best_selling_gifts" size='lg'>
         <p className='home-title'> Best Selling Gifts </p>
         <MDBRow className='row-margin'>
           <MDBCol md='4' className='pad'>

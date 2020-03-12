@@ -17,7 +17,7 @@ import { MDBAnimation } from "mdbreact";
 
 const FeaturedCategories = () => {
   return (
-    <div>
+    <div className="Featured-Categories">
       <MDBAnimation reveal type='fadeIn'>
         <MDBContainer size='lg'>
           <p className='home-title'> Categories </p>

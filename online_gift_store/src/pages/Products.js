@@ -29,7 +29,7 @@ class Products extends React.Component {
 
     var products = PRODUCT_DATA.filter(x => x.id == idi);
     return (
-      <MDBContainer size='lg'>
+      <MDBContainer className="aboutus-container" size='lg'>
         {products.map((i, index) => {
           return (
             <div key={index}>

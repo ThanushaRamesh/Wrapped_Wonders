@@ -885,8 +885,8 @@ Filters Section
 .category-link{
   display:block;
   float: right;
-  margin-right: 9%;
-  margin-top: -2%;
+  margin-right: 8%;
+  margin-top: -1%;
   color: #64006c
 }
 
@@ -900,19 +900,62 @@ Filters Section
 
 .services {
   padding: 2rem 0;
-  bottom: 2em;
+  padding-bottom: 0;
   
 }
 
 .services-center {
   width: 90vw;
-  margin: 0 auto;
+  margin: 5% 5%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
   color: #64006c;
   font-family: Helvetica Neue;
+  text-align: center;
 
 
+}
+
+.services-icon{
+  width: 90vw;
+  margin: 5% 40%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+  font-size: 2rem;
+}
+  
+
+.Featured-Categories{
+  margin-top: 2%;
+}
+
+.best_selling_gifts {
+  margin-top: 5%;
+}
+
+.about_ww {
+  list-style-type: disc;
+  margin-top: 5%;
+  line-height: 2rem;
+  font-family: Helvetica Neue;
+  color: #64006c;
+  font-size: larger;
+
+
+}
+
+.no_padding {
+  padding: 0 !important;
+}
+
+.login-container{
+  width: 90% !important;
+}
+
+.login-card {
+  margin: 10% auto;
 }

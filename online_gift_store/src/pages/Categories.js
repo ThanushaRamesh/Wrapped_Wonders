@@ -18,7 +18,7 @@ import {
 
 const Categories = () => {
   return (
-    <MDBContainer size='lg'>
+    <MDBContainer className="aboutus-container">
       <p className='heading'> Categories </p>
       <MDBRow className='row-margin'>
         <MDBCol md='4' className='pad'>
