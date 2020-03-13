@@ -2,10 +2,10 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./GiftDetails.css";
 import Popup from "reactjs-popup";
-import Products from './Products'
+import Products from "./Products";
 
 export default function GiftDetails() {
-  const history = useHistory();
+  //const history = useHistory();
 
   return (
     <section className='single-product'>
@@ -42,8 +42,14 @@ export default function GiftDetails() {
           }}>
           Add to Cart
         </button> */}
-        <Popup modal trigger={<button className="btn-primary btn-contact"> Add to cart</button>}>
-        msg={"Hello!! Please tell us something about yourself!!"}/>}
+        <Popup
+          modal
+          trigger={
+            <button data-testid='addToCart' className='btn-primary btn-contact'>
+              Add to cart
+            </button>
+          }>
+          msg={"Hello!! Please tell us something about yourself!!"}/>}
         </Popup>
         {/* <Popup trigger={<button> Trigger</button>} position="right center">
     <div>Popup content here !!</div>
