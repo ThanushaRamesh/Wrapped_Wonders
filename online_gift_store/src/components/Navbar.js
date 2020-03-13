@@ -44,17 +44,16 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <MDBNavbar dark expand='md' fixed="top">
-          
+        <MDBNavbar dark expand='md' fixed='top'>
           {/* <MDBNavbarToggler onClick={this.toggleCollapse} /> */}
           <MDBCollapse id='navbarCollapse3' isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
               <MDBNavLink to='/'>
-              <img src={logo} className="logo" alt='tst' />
+                <img src={logo} className='logo' alt='tst' />
               </MDBNavLink>
             </MDBNavbarNav>
-            <MDBNavbarNav right >
-              <MDBNavItem >
+            <MDBNavbarNav right>
+              <MDBNavItem>
                 <MDBNavLink to='/about' activeClassName='active'>
                   About
                 </MDBNavLink>
@@ -73,9 +72,9 @@ class Navbar extends Component {
               </MDBNavItem>
               <MDBNavItem>
                 {/* <MDBNavLink to='/cart' activeClassName='active'> */}
-                  <h4 onClick={this.handleModalOpenCart} className='nav-link'>
-                    <FaShoppingCart />
-                  </h4>
+                <h4 onClick={this.handleModalOpenCart} className='nav-link'>
+                  <FaShoppingCart />
+                </h4>
                 {/* </MDBNavLink> */}
               </MDBNavItem>
             </MDBNavbarNav>
